@@ -1,16 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="auther" content="Eng Ahmed Ayman Khedr">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
-    <title>Document</title>
+    <title>Image Gallery</title>
 </head>
+
 <body>
+    <!-- start hero section -->
     <div class="hero">
         <div class="container">
-            
+            <div class="img" id="img1"><img src="./photos/image1.png" alt=""></div>
+            <div class="img" id="img2"><img src="./photos/image2.png" alt=""></div>
         </div>
     </div>
+    <!-- end hero section -->
+
+    <!-- start nav section -->
+    <div class="nav">
+        <div class="container">
+            <button type="button" name="changeImg" onclick="changeStyle()"><i
+                    class="fa-solid fa-angle-right"></i></button>
+        </div>
+    </div>
+    <!-- end nav section -->
+
+    <script>
+        let galleryIndex = 1;
+        let imageIndex = ["img1", "img2", "img3"]
+
+        function changeStyle() {
+            while (condition) {
+                
+            }
+            galleryIndex++;
+
+            if (galleryIndex % 2 === 0) {
+                const img2 = document.getElementById("img2");
+                const img1 = document.getElementById("img1");
+
+                img2.style.visibility = "visible";
+                img2.style.opacity = 1;
+
+                img1.style.visibility = "hidden";
+                img1.style.opacity = 0;
+            } else {
+                const img1 = document.getElementById("img1");
+                const img2 = document.getElementById("img2");
+
+                img1.style.visibility = "visible";
+                img1.style.opacity = 1;
+
+                img2.style.visibility = "hidden";
+                img2.style.opacity = 0;
+            }
+        }
+    </script>
 </body>
+
 </html>
