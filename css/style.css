@@ -53,3 +53,48 @@ button:hover::before {
 }
 
 /* end rules */
+
+/* start hero section */
+
+.hero .container {
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.hero .container .img {
+    width: inherit;
+    height: inherit;
+    transition: 0.5s;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hero .container #img2 {
+    visibility: hidden;
+    opacity: 0;
+}
+
+/* end hero section */
+
+/* start nav section */
+
+.nav .container {
+    text-align: center;
+}
+
+.nav .container button {
+    width: 75px;
+    height: 75px;
+    outline: none;
+    border: 1px solid burlywood;
+    border-radius: 50%;
+    background-color: transparent;
+    color: blueviolet;
+    font-size: 30px;
+}
+
+/* end nav section */
